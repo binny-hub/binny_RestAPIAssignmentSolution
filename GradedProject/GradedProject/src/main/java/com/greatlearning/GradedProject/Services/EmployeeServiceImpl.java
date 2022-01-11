@@ -70,6 +70,7 @@ BCryptPasswordEncoder bcryptEncoder;
 	@Override
 	public void deleteById(Long id) {
 		employeeRepository.deleteById(id);
+		employeeRepository.flush();
 		
 	}
 
